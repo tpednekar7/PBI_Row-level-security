@@ -143,6 +143,4 @@ User logs in
 |---|---|---|
 | All rows still visible after View as | No active relationship between tables | Create relationship with Both cross-filter direction and security filter enabled |
 | Relationship showing cardinality error | Hidden spaces or type mismatch in SalespersonName | Use Trim + Clean in Power Query on both tables |
-| MoM % showing wrong values | Dividing by current month instead of last month | Use `DIVIDE(diff, lastmonthsales)` not `currentmonthsales` |
-| Total row showing a % value | Measure evaluating at total context | Wrap return value with `IF(HASONEVALUE(...), res, BLANK())` |
 | Table visual showing no rows | Sort-by-column conflict or measure error | Temporarily remove the measure to isolate whether it's a column or measure issue |
